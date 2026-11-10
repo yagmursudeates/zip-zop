@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 472452114}
   - component: {fileID: 472452113}
   m_Layer: 5
-  m_Name: Arena Background
+  m_Name: BG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -348,7 +348,7 @@ GameObject:
   - component: {fileID: 555690572}
   - component: {fileID: 555690571}
   m_Layer: 5
-  m_Name: Asteroid 01
+  m_Name: obsticle (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -554,7 +554,7 @@ GameObject:
   - component: {fileID: 694746544}
   - component: {fileID: 694746543}
   m_Layer: 5
-  m_Name: Asteroid 04
+  m_Name: obsticle (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -675,9 +675,8 @@ GameObject:
   - component: {fileID: 790142550}
   - component: {fileID: 790142549}
   - component: {fileID: 790142548}
-  - component: {fileID: 790142551}
   m_Layer: 5
-  m_Name: Scout Sprite
+  m_Name: playerImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -762,52 +761,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 790142546}
   m_CullTransparentMesh: 1
---- !u!61 &790142551
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 790142546}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 150, y: 250}
-  m_EdgeRadius: 0
 --- !u!1 &962549782
 GameObject:
   m_ObjectHideFlags: 0
@@ -819,7 +772,7 @@ GameObject:
   - component: {fileID: 962549783}
   - component: {fileID: 962549784}
   m_Layer: 5
-  m_Name: Bottom Boundary
+  m_Name: coll (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -903,7 +856,7 @@ GameObject:
   - component: {fileID: 1051469565}
   - component: {fileID: 1051469564}
   m_Layer: 5
-  m_Name: Asteroid 05
+  m_Name: obsticle (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1025,7 +978,7 @@ GameObject:
   - component: {fileID: 1114180831}
   - component: {fileID: 1114180830}
   m_Layer: 5
-  m_Name: Asteroid 03
+  m_Name: obsticle (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1145,7 +1098,7 @@ GameObject:
   - component: {fileID: 1165083789}
   - component: {fileID: 1165083790}
   m_Layer: 5
-  m_Name: Right Boundary
+  m_Name: coll (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1226,7 +1179,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1333014099}
   m_Layer: 5
-  m_Name: Asteroids
+  m_Name: Obsticles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1267,7 +1220,7 @@ GameObject:
   - component: {fileID: 1471670226}
   - component: {fileID: 1471670227}
   m_Layer: 5
-  m_Name: Top Boundary
+  m_Name: coll (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1429,7 +1382,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1507637853}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -1456,8 +1409,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -46, y: -159.67992}
-  m_Radius: 54
+  m_Offset: {x: -47, y: -168.72}
+  m_Radius: 68
 --- !u!1 &1632271124
 GameObject:
   m_ObjectHideFlags: 0
@@ -1469,7 +1422,7 @@ GameObject:
   - component: {fileID: 1632271125}
   - component: {fileID: 1632271126}
   m_Layer: 5
-  m_Name: Left Boundary
+  m_Name: coll (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1657,7 +1610,7 @@ GameObject:
   - component: {fileID: 2128304289}
   - component: {fileID: 2128304288}
   m_Layer: 5
-  m_Name: Asteroid 02
+  m_Name: obsticle (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
